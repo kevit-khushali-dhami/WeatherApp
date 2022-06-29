@@ -19,7 +19,7 @@ weatherForm.addEventListener('submit', async function (event) {
         messageOne.textContent = 'Loading...'
         messageTwo.textContent = ''
 
-        const response = await axios.get('http://localhost:3000/weather?address=' + location)
+        const response = await axios.get('/weather?address=' + location)
         const data = response.data
 
         if (data.error) {

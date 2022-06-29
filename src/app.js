@@ -5,8 +5,11 @@ const forcast = require('./utils/forcast')
 const geoCode = require('./utils/geoCoding')
 
 
-//define path for express config
+
 const app = express()
+const port = process.env.PORT || 3000
+
+//define path for express config
 const publicDirectoryPath = path.join(__dirname, '../public')
 const viewPath = path.join(__dirname,'../templates/views')
 const partialsPath = path.join(__dirname, '../templates/partials')
@@ -94,7 +97,7 @@ app.get('*',(req, res)=>{
 })
 
 
-app.listen(3000, ()=>{
-    console.log("Server is up on the port 3000.")
+app.listen(port, ()=>{
+    console.log("Server is up on the port"+ port)
 })
  
