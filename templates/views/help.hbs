@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Help</title>
+    <link rel="icon" href="/image/weather.png">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}{{!--to include this we write nodemon src/app.js -e js,hbs where -e is extention --}}
+        <p>{{helpmsg}}</p>
+    </div>
+    {{>footer}}
+</body>
+
+</html>
