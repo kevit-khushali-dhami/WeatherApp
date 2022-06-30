@@ -23,18 +23,3 @@ module.exports=geoCode;
 
 
 
-// axios.get(urlGeoCoding).then((response)=>{
-//     console.log(`Latitude: ${response.data.features[0].center[1]}, Longitude: ${response.data.features[0].center[0]}`)
-// }).catch((error)=> {
-   
-//     if (error.response) {
-//         // Request made and server responded
-//      console.log("oops error!")
-//       } else if (error.request) {
-//         // The request was made but no response was received
-//         console.log("Unable to connect the location service!")
-//       } else {
-//         // Something happened in setting up the request that triggered an Error
-//         console.log("Request did not fired(check query params)!")
-//       }
-//   });

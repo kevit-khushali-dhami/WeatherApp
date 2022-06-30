@@ -22,23 +22,3 @@ module.exports = forecast
 
 
 
-//axios is promise based HTTP client for browser and Nodejs.
-
-// axios.get(url).then((response)=>{
-
-//     //console.log(response.data.current)//gets data from the server thru .data
-//     console.log(`${response.data.current.weather_descriptions[0]}. It is currently ${response.data.current.temperature} degress out. It feels like ${response.data.current.feelslike} degress out`)
-
-// }).catch((error)=> {
-   
-//     if (error.response) {
-//         // Request made and server responded
-//      console.log("oops error!")
-//       } else if (error.request) {
-//         // The request was made but no response was received
-//         console.log("Unable to connect the weather service!")
-//       } else {
-//         // Something happened in setting up the request that triggered an Error
-//         console.log("Request did not fired(check query params)!")
-//       }
-//   })
