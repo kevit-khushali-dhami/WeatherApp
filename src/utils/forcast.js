@@ -8,7 +8,7 @@ async function forecast(latitude,longitude,callback){
         if(data.error){
             return callback('Unable to find location!',undefined)
         }
-        callback(undefined,`${data.current.weather_descriptions[0]}. It is currently ${data.current.temperature} out but it feels like ${data.current.feelslike} out`)
+        callback(undefined,`${data.current.weather_descriptions[0]}. It is currently ${data.current.temperature} degrees out but it feels like ${data.current.feelslike} degrees out.The humidity is ${data.current.humidity} %`)
     
     }catch(error){
         callback('Unable to connect to weather services!',undefined)
